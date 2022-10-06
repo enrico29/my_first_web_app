@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            stanza1
+        </title>
+        <meta http-equiv="refresh" content="{{REFRESH}}" >
+        <style>
+            table {
+                border-width: 1;
+                border-style: solid;
+                border-color: black;
+                border-collapse: collapse;
+                background-color: #f1f1f1;
+            }
+            td {
+                border-width: 1;
+                border-style: solid;
+                border-color: rgb(43, 40, 40);
+            }
+            th {
+                color: white;
+                background-color: #555;
+            }
+        </style>
+        <body>
+            <table>
+                <tr>
+                    <th>Data e ora</th>
+                    <th>Stanza</th>
+                    <th>temperature</th>
+                </tr>
+                {% for i in dati %}
+                    <tr>
+                        <td>{{i.TEMPO}}</td>
+                        <td>{{i.STANZA}}</td>
+                        <td>{{i.TEMP}}</td>
+                    </tr>   
+                {% endfor %}
+            </table>
+
+        </body>
+    </head>
+</html>
