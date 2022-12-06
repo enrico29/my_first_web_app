@@ -2,7 +2,7 @@ from json import *
 from datetime import *
 from random import *
 from time import *
-#
+# ciao mondo 2
 dati = []
 while(True):
     file = open('./database/index.json', 'w')
